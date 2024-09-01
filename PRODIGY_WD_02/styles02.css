@@ -1,0 +1,105 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #282c34;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.stopwatch {
+    text-align: center;
+}
+
+.dial-container {
+    position: relative;
+    margin: 20px auto;
+    width: 200px;
+    height: 200px;
+    background-color: #333;
+    border-radius: 50%;
+    border: 5px solid #444;
+}
+
+.dial {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.hand {
+    position: absolute;
+    width: 2px;
+    height: 50%;
+    background-color: red;
+    top: 0;
+    left: 50%;
+    transform-origin: bottom;
+    transform: rotate(0deg);
+    transition: transform 0.05s linear;
+}
+
+/* Positioning the numbers around the dial */
+.number {
+    position: absolute;
+    color: white;
+    font-size: 1.2rem;
+    transform: translate(-50%, -50%);
+}
+
+.number-12 {
+    top: 15px;
+    left: 50%;
+}
+
+.number-3 {
+    top: 50%;
+    right: 1px;
+}
+
+.number-6 {
+    bottom: 1px;
+    left: 50%;
+}
+
+.number-9 {
+    top: 50%;
+    left: 10px;
+}
+
+.time {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.controls button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.controls button:hover {
+    background-color: #444;
+}
+
+.laps {
+    margin-top: 20px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.lap-time {
+    background-color: #333;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}

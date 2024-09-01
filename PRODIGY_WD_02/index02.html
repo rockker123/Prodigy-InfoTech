@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch with Dial and Numbers</title>
+    <link rel="stylesheet" href="styles02.css">
+</head>
+<body>
+
+    <div class="stopwatch">
+        <div class="dial-container">
+            <div class="dial">
+                <div id="hand" class="hand"></div>
+                <div class="number number-12">12</div>
+                <div class="number number-3">3</div>
+                <div class="number number-6">6</div>
+                <div class="number number-9">9</div>
+            </div>
+        </div>
+        <div id="display" class="time">00:00:00.000</div>
+        <div class="controls">
+            <button id="startStopBtn">Start</button>
+            <button id="resetBtn">Reset</button>
+            <button id="lapBtn" disabled>Lap</button>
+        </div>
+        <div id="laps" class="laps"></div>
+    </div>
+
+    <script src="script02.js"></script>
+</body>
+</html>
